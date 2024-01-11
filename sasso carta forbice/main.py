@@ -4,10 +4,10 @@ print("Welcome to Rock, Paper, Scissors!")
 print("1) Rock")
 print("2) Paper")
 print("3) Scissors")
-y = int(input("Enter a number: "))
-x = randint(1, 3)
+utente = int(input("Enter a number: "))
+engine = randint(1, 3)
 
-match x:
+match engine:
     case 1:
         print("The computer choose Rock")
     case 2:
@@ -15,13 +15,13 @@ match x:
     case 3:
         print("The computer choose Scissors")
 
-if x == y:
+if engine == utente:
     print("Draw")
-elif x == 1 and y == 3:
-    print("You lose")
-elif x == 3 and y == 1:
-    print("You win")
-elif x < y:
-    print("You win")
+elif engine == 1 and utente == 3:
+    print("utente lose")
+elif engine == 3 and utente == 1:
+    print("utente win")
+elif engine < utente:
+    print("utente win")
 else:
-    print("You lose")
+    print("utente lose")
